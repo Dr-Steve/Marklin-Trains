@@ -1,0 +1,67 @@
+    *****************************
+    MARKLIN TRAINS DESIGN PROJECT
+    *****************************
+
+"I think I can, I think I can..." -The Little Engine That Could
+
+
+Intro
+-----
+Here is the source for the project.  It may be rather technical to get
+running, so I listed config instructions below.  If you don't care to get
+it running on your local box then that may be fine depending on what part
+you are working on.  For the API and other parts you can easily design and
+test your code elsewhere then put it in the correct folder and push.  The
+config isn't the most detailed thing in the world so if you have questions
+don't hesitate to shoot me an email.  I can give a more detailed explanation
+if necessary.  Also I'm running Ubuntu on a PC, all bets are off if you've
+got something else.
+
+Directory Structure
+-------------------
+
+This is given as seen as a netbeans project.  If you're not a fan of Netbeans
+then you'll see a slightly more messy array of folders.  All this is in there
+somewhere, so just track down what you need to edit and try not to mess
+everything up.  Why netbeans you ask?  Because it takes care builds and
+deployment to a local server for testing and also auto-generates a lot of
+the struts crap.  I'm always a fan of slimming down to vim, but there is too
+much tedious work with a web server.
+
+Marklin_Trains 
+    Web Pages   <---------------Holds everything front-end related
+        META-INF    <-----------Struts crap, stay away
+        WEB-INF     <-----------More Struts crap, configures where the user enters the app and the name
+        css         <-----------Put all the css files here
+        jsp         <-----------JSP's go here.  These are essentially HTML files with some bonus tags that let us call java methods
+        scripts     <-----------Javascript, php, whatever scripts you need.  Abstract them and stick em here so all pages can access them
+    Source Packages <-----------This holds all the java sources and struts mappings
+        <default Package>   <---Holds the struts mappings.  This tells the app what java class/method to execute then what jsp to render on completion
+        api     <---------------This is where the API's will go.  Namely, the canonical API which will move the train from java methods.
+        example <---------------An example from a hello-world app to get me going, I'll can this later.
+    Libraries   <---------------any jar files or other dependencies needed.
+    Configuration Files <-------More struts config crap.  Stay out of here for the most part
+
+
+Configuration
+-------------
+Install Apache Tomcat (or comparable web server)
+    http://www.howtogeek.com/howto/linux/installing-tomcat-6-on-ubuntu/
+    I used version 7 and downloaded the tar from the apache website, not
+    through the wget that the tutorial used.
+
+Install Netbeans
+    Not necessary if you prefer other IDE's or simple text editors, but
+    this is what I use.
+
+    Also grab the struts 2 plugin 
+    http://plugins.netbeans.org/plugin/39218
+    http://wiki.netbeans.org/InstallingAPlugin
+    This is for netbeans 7, if you have 6 there is another out there.
+
+Open the project with netbeans and be sure the server points to the
+tomcat install from step 1.
+
+Run!
+
+
