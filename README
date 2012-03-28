@@ -19,7 +19,6 @@ got something else.
 
 Directory Structure
 -------------------
-
 This is given as seen as a netbeans project.  If you're not a fan of Netbeans
 then you'll see a slightly more messy array of folders.  All this is in there
 somewhere, so just track down what you need to edit and try not to mess
@@ -42,6 +41,9 @@ Marklin_Trains
     Libraries   <---------------any jar files or other dependencies needed.
     Configuration Files <-------More struts config crap.  Stay out of here for the most part
 
+TODO's
+------
+I stubbed out the database connection and the api.  All of the methods still need to be written.  Feel free to join in here.  Write any implementation in the MarklinAPIImpl.java and DatabaseImpl.java classes.  The interfaces are there for consistency and so that I can let the front end use them before they are implemented.  Change the implementations at will, but if you are going to change the interfaces shoot me an email, as that will likely crash my server once this gets going.
 
 Configuration
 -------------
