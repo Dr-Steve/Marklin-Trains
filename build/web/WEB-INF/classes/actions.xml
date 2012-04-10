@@ -9,6 +9,15 @@
         <action name="HelloWorld" class="example.HelloWorld">
             <result>/jsp/index.jsp</result>
         </action>
+        <action name="controller" class="actions.MainAction">
+            <result>/jsp/control.jsp</result>
+        </action>
+        <action name="go" class="actions.MainAction" method="go">
+            <result>/jsp/control.jsp</result>
+        </action>
+        <action name="stop" class="actions.MainAction" method="stop">
+            <result>/jsp/control.jsp</result>
+        </action>
     </package>
 </struts>
 

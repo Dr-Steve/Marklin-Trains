@@ -1,0 +1,36 @@
+/* 
+    Document   : general
+    Created on : Apr 3, 2012, 10:47:46 AM
+    Author     : steve
+    Description: general style sheet for all pages
+*/
+
+    root 
+    { 
+    display: block;
+    }
+    body
+    {
+    background-color: #000;
+    font-family: monospace;
+    }
+    h1#title
+    {
+    font-size: 200%;
+    text-align: center;
+    }
+    div#container
+    {
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    width: 600px;
+    }
+    div#controller
+    {
+    background-color: #aaa;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    }

@@ -7,6 +7,8 @@ package databaseImpl;
 import database.ConflictingUserException;
 import database.Database;
 import database.UserNotFoundException;
+import java.util.HashSet;
+import java.util.LinkedList;
 import java.util.Set;
 import util.tSwitch;
 
@@ -33,7 +35,10 @@ public class DatabaseImpl implements Database {
 
     @Override
     public Set<Integer> getTrains() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        Set<Integer> trains = (Set<Integer>) new HashSet<Integer>();
+        trains.add(3);
+        trains.add(26);
+        return trains;
     }
 
     @Override
